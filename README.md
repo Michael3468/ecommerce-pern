@@ -1,3 +1,13 @@
-# ecommerce-pern-stack
+# ecommerce-pern
 
-**Based on [Ulbi TV](https://www.youtube.com/watch?v=H2GCkRF9eko)**
+After cloning project you need to build postgresql container in `server` folder
+
+```
+sudo docker-compose up --build
+```
+
+And next time just use
+
+```
+sudo docker-compose up
+```
