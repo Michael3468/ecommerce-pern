@@ -16,13 +16,13 @@ const Admin = () => {
     >
       <Col xs={8} sm={8} md={6} className="d-flex flex-column ms-auto me-auto mt-auto mb-auto">
         <Button variant="outline-dark" className="mt-4" onClick={() => setTypeVisible(true)}>
-          Add Type
+          Add Product Type (ex: Smartphone, PC, TV)
         </Button>
         <Button variant="outline-dark" className="mt-4" onClick={() => setBrandVisible(true)}>
-          Add Brand
+          Add Brand Name (ex: Samsung, Apple)
         </Button>
         <Button variant="outline-dark" className="mt-4" onClick={() => setDeviceVisible(true)}>
-          Add Device
+          Add Product Item (ex: iPhone 15)
         </Button>
 
         <CreateBrand show={brandVisible} onHide={() => setBrandVisible(false)} />
