@@ -1,0 +1,22 @@
+@import '../../node_modules/normalize.css/normalize.css';
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 1px solid black;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
