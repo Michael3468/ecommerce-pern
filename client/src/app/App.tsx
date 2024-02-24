@@ -3,9 +3,12 @@ import { useContext, useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { BrowserRouter } from 'react-router-dom';
 
-import { StoreContext } from '.';
-import { AppRouter, Navigation } from './components';
-import { check } from './http/userAPI';
+import { StoreContext } from '..';
+
+import { AppRouter, Navigation } from '../components';
+import { check } from '../http/userAPI';
+
+import './main.scss';
 
 const App = observer(() => {
   const { userStore } = useContext(StoreContext);

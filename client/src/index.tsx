@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 // TODO: re-export stores from store/index.ts
 import CartStore from './store/CartStore';
