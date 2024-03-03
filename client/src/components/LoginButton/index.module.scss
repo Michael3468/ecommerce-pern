@@ -1,7 +1,8 @@
-@import '../../assets/styles/constants.module.scss';
+@import '../../assets/styles/constants.scss';
 
 .icon {
   display: block;
+
   @media screen and (min-width: $navigation-icons-min-width-breakpoint) {
     display: none;
   }
