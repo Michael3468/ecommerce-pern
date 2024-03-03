@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cm": "cz",
     "version": "auto-changelog -p && git add HISTORY.md",
     "release-same-version": "git flow release start next && git flow release finish -n next",
     "release-minor": "git flow release start next && npm version minor && git flow release finish -n next",
     "release-patch": "git flow release start next && npm version patch && git flow release finish -n next",
-    "push": "git checkout main && git push && git checkout develop && git push"
+    "push": "git checkout main && git push && git checkout develop && git push",
+    "stylelint": "stylelint **/*.scss **/**/**/*.scss",
+    "stylelint-fix": "stylelint **/*.scss **/**/**/*.scss --fix",
+    "cml": "npm run stylelint-fix && npm run stylelint && git status && npm run cm",
+    "cm": "cz"
   },
   "auto-changelog": {
     "output": "HISTORY.md",
@@ -37,7 +40,13 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "git-flow": "^0.2.0"
+    "git-flow": "^0.2.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.1.0"
   },
   "config": {
     "commitizen": {
